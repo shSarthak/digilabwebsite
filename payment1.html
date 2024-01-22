@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment1.css">
+    <title>Payment Page</title>
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Payment Details</h1>
+        <div class="payment-methods">
+            <h2>Accepted Payment Methods</h2>
+            <ul>
+                <li>Credit Card</li>
+                <li>Debit Card</li>
+                <li>PayPal</li>
+            </ul>
+        </div>
+        <form id="payment-form" class="payment-form">
+            <h2>Billing Information</h2>
+            <!-- Billing information form fields -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="address">Billing Address:</label>
+            <input type="text" id="address" name="address" required>
+            <!-- Add other billing fields here -->
+
+            <h2>Shipping Information</h2>
+            <!-- Shipping information form fields -->
+            <label for="shipping-address">Shipping Address:</label>
+            <input type="text" id="shipping-address" name="shipping-address">
+            <label for="shipping-method">Shipping Method:</label>
+            <select id="shipping-method" name="shipping-method">
+                <option value="standard">Standard Shipping</option>
+                <option value="express">Express Shipping</option>
+            </select>
+            <!-- Add other shipping fields here -->
+
+            <h2>Order Summary</h2>
+            <!-- Display order summary here -->
+
+            <h2>Payment Information</h2>
+            <!-- Payment form fields -->
+            <label for="credit-card">Credit Card Number:</label>
+            <input type="text" id="credit-card" name="credit-card" required>
+            <label for="expiration-date">Expiration Date:</label>
+            <input type="text" id="expiration-date" name="expiration-date" required>
+            <!-- Add other payment fields here -->
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+</body>
+</html>

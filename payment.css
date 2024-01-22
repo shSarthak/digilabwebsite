@@ -1,0 +1,86 @@
+.payment-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+body{
+    background-image: url(./psyment.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 800px;
+}
+
+.payment-option {
+    width: 250px;
+    height: 350px;
+    perspective: 1000px;
+}
+
+.payment-option:hover .payment-front {
+    transform: rotateY(180deg);
+}
+
+.payment-option:hover .payment-back {
+    transform: rotateY(0);
+}
+
+.payment-front,
+.payment-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+
+.payment-front {
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(0);
+}
+
+.payment-front h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10rem; 
+}
+
+.payment-back {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.payment-back form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-back input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.payment-back button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
